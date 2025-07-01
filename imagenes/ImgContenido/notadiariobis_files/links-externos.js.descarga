@@ -1,0 +1,12 @@
+const linksExternos = [...document.links].filter(link => {
+  if(!/:\/\/(www.)?gba.gob.ar/.test(link.href)) {
+    return true;
+  }
+  link.href.replace('://', '://www.');
+  return false;
+});
+
+linksExternos.forEach(link => {
+    !link.target.includes('blank') ? link.target = '_blank' : null;
+    link.setAttribute('rel', 'noopener noreferrer');
+});
