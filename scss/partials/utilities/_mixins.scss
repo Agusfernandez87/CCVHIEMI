@@ -1,0 +1,7 @@
+//MIXIN PARA BOTONES//
+@mixin btn-mas-info ($color, $background, $font-family) {
+color: $color;
+background-color: $background;
+font-family: $font-family;
+}
+

@@ -1,0 +1,36 @@
+@use "../utilities/variables";
+
+//CARD INDEX//
+.art_card{
+    row-gap: 4vh;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.card {
+    border-style: solid;
+    color: variables.$color-parrafo;
+    width: 18rem;
+    .card-img-top{
+        border-radius: 10%;
+    }
+}
+    .card-body{
+            background-image: url(variables.$cardbody-background-image);
+            .card-title{
+                font-family:variables.$font-titulos;
+                text-align: center;
+                color: variables.$color-secundario;
+            }
+        }
+
+//CARD CONTACTO//
+.card-titlecontacto{
+    color: variables.$color-secundario ;
+    font-family:variables.$font-titulos;
+    text-align: center;
+}
+.cardcontacto{
+  background-image: url(../imagenes/ImgContenido/Cromo2.jpeg);
+}

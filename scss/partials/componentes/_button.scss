@@ -1,0 +1,12 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+.btn {
+    @include mixins.btn-mas-info (variables.$color-btn, variables.$color-primario, variables.$font-titulos);
+    border-radius: 5px ;
+    &:hover {
+        color: variables.$color-secundario;
+        background-color: variables.$color-btn;
+        border-color:variables.$color-secundario;
+    }
+}

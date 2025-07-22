@@ -1,0 +1,17 @@
+//VARIABLES
+@use "./partials/utilities/variables";
+@use "./partials/utilities/mixins";
+
+
+// BASE
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+
+// COMPONENTS
+@use "./partials/componentes/nabvar";
+@use "./partials/componentes/general";
+@use "./partials/componentes/footer";
+@use "./partials/componentes/cards";
+@use "./partials/componentes/button";
+

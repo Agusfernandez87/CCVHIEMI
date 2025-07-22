@@ -1,0 +1,25 @@
+@use "..//utilities/variables";
+
+.navbar{
+    padding: 1rem;
+    background-image: url(variables.$navbar-background-image); 
+    background-size: cover;
+    background-position: center;
+    .container-fluid{
+          .imgnavbar{
+            width:20rem;
+        }
+        .imghome{
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+    
+                       
+                        
+                    
+                
+        
+        
+    
