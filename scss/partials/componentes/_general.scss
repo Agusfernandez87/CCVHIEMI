@@ -1,40 +1,33 @@
 @use "../utilities/variables";
+@use "../utilities/mixins";
 
 h1 {
-    color: variables.$color-primario;
-    font-family: variables.$font-titulos;
+    @include mixins.title (variables.$color-primario, variables.$font-titulos);
     font-size: 48px;
-    text-align: center;   
+    @extend .texto-centrado;  
     border-style: solid ;
     border-color: variables.$color-primario;
     padding: 30px;
 }
 h2{
-    color: variables.$color-secundario;
-    font-family:variables.$font-titulos;
-    text-align: center;
+    @include mixins.title (variables.$color-secundario, variables.$font-titulos);
+    @extend .texto-centrado;
 }
 h3{
-    text-decoration: underline;
-    font-family:variables.$font-titulos;
-    color: variables.$color-terciario
-    
+    @include mixins.title (variables.$color-terciario, variables.$font-titulos);
+    text-decoration: underline;    
 }
 h4{
-    color: variables.$color-secundario;
-    font-family:variables.$font-titulos;
+    @include mixins.title (variables.$color-secundario, variables.$font-titulos);
     text-align: start;
 }
 .ulindex{
-    color: variables.$color-parrafo;
-    font-family:variables.$font-principal;
-   
+    @include mixins.title (variables.$color-parrafo, variables.$font-principal);   
 }
 p {
-    color: variables.$color-parrafo;
-    font-family:variables.$font-principal;
+    @include mixins.title (variables.$color-parrafo, variables.$font-principal);
     font-size: 1rem;
-    padding: 2fr; 
+    padding: 1rem; 
 }
 .sectionpp {
     display: flex;
@@ -52,4 +45,17 @@ p {
 .map-iframe {
     width: 50vh;
     height: 50vh;
+}
+.importand{
+    background-color: variables.$color-backliso;
+    text-align: center;
+    border-style: solid;
+    border-color: variables.$color-secundario;
+    font-weight: bold;
+}
+.texto-centrado{
+    text-align: center;
+}
+.texto-centrado{
+    text-align: center;
 }

@@ -5,3 +5,8 @@ background-color: $background;
 font-family: $font-family;
 }
 
+//MIXIN PARA TITULOS//
+@mixin title ($color, $font-family,) {
+color: $color;
+font-family: $font-family;
+}
