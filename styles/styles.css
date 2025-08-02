@@ -21,6 +21,11 @@
   height: 64px;
 }
 
+.nav-link {
+  font-family: "Questrial", sans-serif;
+  color: black;
+}
+
 h1 {
   color: rgb(21, 141, 181);
   font-family: "Questrial", sans-serif;
@@ -33,6 +38,7 @@ h1 {
 h2 {
   color: rgb(244, 86, 123);
   font-family: "Questrial", sans-serif;
+  text-decoration: underline;
 }
 
 h3 {
@@ -56,7 +62,6 @@ p {
   color: black;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
-  padding: 1rem;
 }
 
 .sectionpp {
@@ -73,6 +78,7 @@ p {
 
 .pdiv {
   font-style: italic;
+  font-size: 1.1rem;
 }
 
 .map-iframe {
@@ -92,8 +98,21 @@ p {
   text-align: center;
 }
 
-.texto-centrado, h1, h2 {
+.carousel-inner {
+  height: 450px;
+}
+
+.ulcontacto {
   text-align: center;
+}
+
+.licontacto {
+  list-style-type: none;
+}
+
+.dicontacto {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-info {
@@ -141,6 +160,13 @@ p {
 
 .cardcontacto {
   background-image: url(../imagenes/ImgContenido/Cromo2.jpeg);
+  align-items: center;
+}
+
+.container-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .btn {

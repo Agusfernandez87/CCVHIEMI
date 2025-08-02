@@ -12,6 +12,7 @@ h1 {
 h2{
     @include mixins.title (variables.$color-secundario, variables.$font-titulos);
     @extend .texto-centrado;
+    text-decoration: underline;  
 }
 h3{
     @include mixins.title (variables.$color-terciario, variables.$font-titulos);
@@ -27,7 +28,6 @@ h4{
 p {
     @include mixins.title (variables.$color-parrafo, variables.$font-principal);
     font-size: 1rem;
-    padding: 1rem; 
 }
 .sectionpp {
     display: flex;
@@ -41,6 +41,7 @@ p {
 }
 .pdiv{
     font-style: italic;
+    font-size: 1.1rem;
 }
 .map-iframe {
     width: 50vh;
@@ -56,6 +57,16 @@ p {
 .texto-centrado{
     text-align: center;
 }
-.texto-centrado{
+.carousel-inner {
+    height: 450px;
+}
+.ulcontacto{
     text-align: center;
+}
+.licontacto{
+    list-style-type: none;
+}
+.dicontacto{
+    display: flex;
+    flex-direction: column;
 }

@@ -32,5 +32,11 @@
     text-align: center;
 }
 .cardcontacto{
-  background-image: url(../imagenes/ImgContenido/Cromo2.jpeg);
+    background-image: url(../imagenes/ImgContenido/Cromo2.jpeg);
+    align-items: center;
+}
+.container-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
