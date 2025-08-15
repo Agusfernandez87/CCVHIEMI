@@ -2,16 +2,17 @@
 
 //CARD INDEX//
 .art_card{
-    row-gap: 4vh;
-    padding: 50px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
    
 }
 .card {
     border-style: solid;
     color: variables.$color-parrafo;
-    width: 18rem;
+    max-width: 18rem;
     .card-img-top{
         border-radius: 10%;
     }

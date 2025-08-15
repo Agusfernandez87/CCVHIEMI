@@ -7,7 +7,8 @@ h1 {
     @extend .texto-centrado;  
     border-style: solid ;
     border-color: variables.$color-primario;
-    padding: 30px;
+    padding: 10px;
+    margin-bottom: 20px; 
 }
 h2{
     @include mixins.title (variables.$color-secundario, variables.$font-titulos);
@@ -16,11 +17,12 @@ h2{
 }
 h3{
     @include mixins.title (variables.$color-terciario, variables.$font-titulos);
-    text-decoration: underline;    
+    text-decoration: underline;
+    @extend .texto-centrado;    
 }
 h4{
     @include mixins.title (variables.$color-secundario, variables.$font-titulos);
-    text-align: start;
+    text-align: center;
 }
 .ulindex{
     @include mixins.title (variables.$color-parrafo, variables.$font-principal);   
@@ -29,9 +31,19 @@ p {
     @include mixins.title (variables.$color-parrafo, variables.$font-principal);
     font-size: 1rem;
 }
+.pindex{
+    text-align: center;
+}
 .sectionpp {
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.lipp{
+    @extend .licontacto;
+    @extend .texto-centrado;
 }
 .imgprofesional {
     border-radius: 20%;
@@ -39,29 +51,29 @@ p {
     height: 10rem;
     object-fit: cover;
 }
+.profesional-section{
+    display: flex;
+    justify-content: center;
+}
+.imgcarrusel{
+    max-height: 400px;
+}
 .pdiv{
     font-style: italic;
     font-size: 1.1rem;
 }
-.map-iframe {
-    width: 50vh;
-    height: 50vh;
-}
 .importand{
     background-color: variables.$color-backliso;
-    text-align: center;
     border-style: solid;
     border-color: variables.$color-secundario;
     font-weight: bold;
+    @extend .texto-centrado;
 }
 .texto-centrado{
     text-align: center;
 }
-.carousel-inner {
-    height: 450px;
-}
 .ulcontacto{
-    text-align: center;
+    @extend .texto-centrado;
 }
 .licontacto{
     list-style-type: none;
@@ -69,4 +81,7 @@ p {
 .dicontacto{
     display: flex;
     flex-direction: column;
+}
+.iframe{
+    max-height: 400px;
 }

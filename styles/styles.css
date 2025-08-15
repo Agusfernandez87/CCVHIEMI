@@ -1,12 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Questrial&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
-/*Fuente Nunito/*
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Questrial&display=swap');
-/* font-family: "Questrial", sans-serif;*/
-/* font-family: "Nunito", sans-serif;*/
 .navbar {
   padding: 1rem;
   background-image: url("../imagenes/ImgContenido/navbar.jpeg");
@@ -32,7 +29,8 @@ h1 {
   font-size: 48px;
   border-style: solid;
   border-color: rgb(21, 141, 181);
-  padding: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -50,7 +48,7 @@ h3 {
 h4 {
   color: rgb(244, 86, 123);
   font-family: "Questrial", sans-serif;
-  text-align: start;
+  text-align: center;
 }
 
 .ulindex {
@@ -64,9 +62,16 @@ p {
   font-size: 1rem;
 }
 
+.pindex {
+  text-align: center;
+}
+
 .sectionpp {
   display: flex;
-  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
 }
 
 .imgprofesional {
@@ -76,37 +81,32 @@ p {
   object-fit: cover;
 }
 
+.profesional-section {
+  display: flex;
+  justify-content: center;
+}
+
+.imgcarrusel {
+  max-height: 400px;
+}
+
 .pdiv {
   font-style: italic;
   font-size: 1.1rem;
 }
 
-.map-iframe {
-  width: 50vh;
-  height: 50vh;
-}
-
 .importand {
   background-color: rgb(252, 217, 76);
-  text-align: center;
   border-style: solid;
   border-color: rgb(244, 86, 123);
   font-weight: bold;
 }
 
-.texto-centrado, h1, h2 {
+.texto-centrado, .ulcontacto, h1, h2, h3, .lipp, .importand {
   text-align: center;
 }
 
-.carousel-inner {
-  height: 450px;
-}
-
-.ulcontacto {
-  text-align: center;
-}
-
-.licontacto {
+.licontacto, .lipp {
   list-style-type: none;
 }
 
@@ -115,11 +115,16 @@ p {
   flex-direction: column;
 }
 
+.iframe {
+  max-height: 400px;
+}
+
 .footer-info {
   display: flex;
   align-items: center;
   gap: 10px;
-  justify-content: end;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .marcaregistrada {
@@ -128,16 +133,17 @@ p {
 }
 
 .art_card {
-  row-gap: 4vh;
-  padding: 50px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card {
   border-style: solid;
   color: black;
-  width: 18rem;
+  max-width: 18rem;
 }
 .card .card-img-top {
   border-radius: 10%;
